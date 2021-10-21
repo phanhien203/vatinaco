@@ -56,7 +56,7 @@ function Register() {
             <div className="wrap">
                 <div className="form">
                     <h2>CREATE NEW ACCOUNT</h2>
-                    <img className="img_acc" src="new-acc.svg" />
+                    <img className="img_signup" src="new-acc.svg" />
                     {err && showErrMsg(err)}
                     {success && showSuccessMsg(success)}
 
@@ -85,7 +85,7 @@ function Register() {
                                 value={cf_password} name="cf_password" onChange={handleChangeInput} />
                         </div>
 
-                        <div className="btn">
+                        <div className="wrap_button">
                             <button type="submit">SIGN UP</button>
                         </div>
                     </form>

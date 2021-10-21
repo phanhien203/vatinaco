@@ -43,7 +43,7 @@ function ForgotPassword() {
                     <label htmlFor="email">Enter your email address</label>
                     <input type="email" name="email" id="email" value={email}
                         onChange={handleChangeInput} />
-                    <div className="btn">
+                    <div className="wrap_button">
                         <button onClick={forgotPassword}>Verify your email</button>
                     </div>
                 </div>

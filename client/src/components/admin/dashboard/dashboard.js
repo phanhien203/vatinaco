@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import axios from 'axios'
 
 import Culter from "./culter"
-import Engery from "./engery";
+import Energy from "./energy";
 import Environment from "./environment";
 import Main from "./main";
 import Performance from "./performance";
@@ -30,13 +30,9 @@ export default function Dashboard() {
                 </div>
 
                 <Environment />
-                <Engery />
+                <Energy />
                 <History />
             </div>
-
-
-
-
         </div>
     )
 }

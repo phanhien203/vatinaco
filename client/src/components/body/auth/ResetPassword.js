@@ -50,7 +50,7 @@ function ResetPassword() {
             <div className="wrap">
                 <div className="form">
                     <h2>Reset Your Password</h2>
-                    <img className="img_acc" src="/key.svg" />
+                    <img className="img_key" src="/key.svg" />
                     {err && showErrMsg(err)}
                     {success && showSuccessMsg(success)}
                     <form>
@@ -61,7 +61,7 @@ function ResetPassword() {
                         <label htmlFor="cf_password">Confirm Password</label>
                         <input type="password" name="cf_password" id="cf_password" value={cf_password}
                             onChange={handleChangeInput} />
-                        <div className="btn">
+                        <div className="wrap_button">
                             <button onClick={handleResetPass}>Reset Password</button>
                         </div>
                     </form>

@@ -90,7 +90,7 @@ function Login() {
             <div className="wrap">
                 <div className="form">
                     <h2>SIGN IN YOUR ACCOUNT</h2>
-                    <img className="img_acc" src="group.svg" />
+                    <img className="img_login_page" src="group.svg" />
                     {err && showErrMsg(err)}
                     {success && showSuccessMsg(success)}
 
@@ -107,7 +107,7 @@ function Login() {
                                 value={password} name="password" onChange={handleChangeInput} />
                         </div>
 
-                        <div className="btn">
+                        <div className="wrap_button">
                             <button type="submit">SIGN IN</button>
                         </div>
                     </form>

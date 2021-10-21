@@ -5,6 +5,7 @@ import {dispatchLogin, fetchUser, dispatchGetUser} from './redux/actions/authAct
 
 import Header from './components/header/Header'
 import Body from './components/body/Body'
+import Admin from './components/admin';
 import axios from 'axios';
 
 function App() {
@@ -40,7 +41,9 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Body />        
+        <Body />    
+        {(auth.isAdmin)?<Admin/>:<></>} 
+          
       </div>
     </Router>
   );

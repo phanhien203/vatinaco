@@ -1,6 +1,12 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
+
 import Header from '../header/Header'
+import Navbar from '../admin/sidebar/Sidebar'
+
+import Home from '../body/home/Home'
+import Admin from '../admin'
+
 import Login from './auth/Login'
 import Register from './auth/Register'
 import ActivationEmail from './auth/ActivationEmail'
@@ -11,11 +17,8 @@ import ResetPass from '../body/auth/ResetPassword'
 
 import Profile from '../body/profile/Profile'
 import EditUser from '../body/profile/EditUser'
-import Admin from '../admin'
-import Navbar from '../admin/navbar/Navbar'
 
-import Home from '../body/home/Home'
-// import NotFound from '../utils/NotFound'
+
 
 import './auth/auth.scss'
 
@@ -42,8 +45,9 @@ function Body() {
 
                 <Route path="/profile" component={isLogged ? Profile : NotFound} exact />
                 <Route path="/edit_user/:id" component={isAdmin ? EditUser : NotFound} exact />
-                {(isAdmin)?<><Navbar/><Admin/></>:<></>}
-                <Route component={NotFound}/>
+                {/* {(isAdmin)?<><Navbar/><Admin/></>:<></>} */}
+                {/* <Route path="/admin" component={Admin}/> */}
+     
             </Switch>
         </section>
     )

@@ -30,14 +30,14 @@ export default function Main() {
 
     return (
         <div className="main_db ">
+
+            <h3>Manufacturing Nanocovax Vaccine</h3>
+            <h2>{timeString}</h2>
             <div className="bg_m">
                 <h4></h4>
-                <img className="bg ctr" src="test.svg" />
+                <img className="bg ctr" src="/test.svg" />
 
             </div>
-            <h3>manufacturing Nanocovax Vaccine</h3>
-            <h2>{timeString}</h2>
-            
 
         </div>
     )

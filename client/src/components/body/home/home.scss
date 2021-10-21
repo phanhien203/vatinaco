@@ -1,7 +1,7 @@
 .home_page{
     width: 100%;
     color: rgb(56, 48, 48);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 
     li {
         display: block;
@@ -138,7 +138,7 @@
                 margin: auto auto;
             }
 
-            .ctn {
+            .row {
                 width: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -167,9 +167,24 @@
                         -webkit-box-orient: vertical;
                     }
                 }
+
+                .more {
+                    width: 80px;
             }
 
-            .row-3 {
+                .more:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            .content-3 {
+                width: 100%;
+                border-top: #5858584b 2px solid;
+                padding-top: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 img {
                     width: 360px;
                 }
@@ -298,7 +313,7 @@
                 margin: auto auto;
             }
 
-            .ctn {
+            .row {
                 .para {
                     padding: 20px;
                     font-size: 1rem;
@@ -317,7 +332,7 @@
                 }
             }
 
-            .row-3 {
+            .content-3 {
                 img {
                     width: 360px;
                 }
@@ -390,7 +405,7 @@
                 margin: auto auto;
             }
 
-            .ctn {
+            .row {
                 .para {
                     padding: 50px;
                     p {
@@ -402,10 +417,10 @@
 
                 .more {
                     display: none;
-                }
+            }
             }
 
-            .row-3 {
+            .content-3 {
                 img {
                     width: 360px;
                 }

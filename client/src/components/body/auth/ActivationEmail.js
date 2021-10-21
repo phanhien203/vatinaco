@@ -26,7 +26,6 @@ function ActivationEmail() {
         <div className="auth">
             <div className="wrap" >
                 <div className="form">
-
                         {err  && showImgErr()}
                         {success  && showImgSuccess()}
 
@@ -43,7 +42,7 @@ export const showImgErr = () => {
     return (<div className="check_form">
     <h2 className="check_title">ACCOUNT HAS NOT BEEN ACTIVATED</h2>
         <img className="img_check" src="/lose.svg" />
-        <div className="btn">
+        <div className="wrap_button">
             <button ><Link to='/register'>SIGN UP</Link></button>
         </div>
     </div>)
@@ -53,7 +52,7 @@ export const showImgSuccess = () => {
     return (<div className="check_form">
     <h2 className="check_title">ACCOUNT HAS BEEN ACTIVATED</h2>
         <img className="img_check" src="/success.svg" />
-        <div className="btn">
+        <div className="wrap_button">
             <button ><Link to='/login'>SIGN IN</Link></button>
         </div>
     </div>)
