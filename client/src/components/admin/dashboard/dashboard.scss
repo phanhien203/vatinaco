@@ -300,14 +300,10 @@
 
 .storage {
     .chart {
-        width: 100%;
+        width: 70%;
         display: flex;
         align-items: center;
         justify-content: center;
-
-        img {
-            width: 50%;
-        }
     }
 }
 
@@ -337,3 +333,67 @@
     }
 }
 
+.environment {
+    .chart {
+        width: 100%;
+        height: calc(100% - 40px);
+        display: flex;
+        justify-content: space-around;
+
+
+        // .bar {
+        //     width: 100%;
+        //     background: #555;
+        //     padding: 10px;
+        //     -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+        //     -moz-transform: rotate(-90deg);   /* Firefox */
+        //     -ms-transform: rotate(-90deg);   /* IE 9 */
+        //     -o-transform: rotate(-90deg);   /* Opera */
+        //     transform: rotate(-90deg);  
+
+        //     p {
+        //         position: relative;
+        //         background: #00A6FF;
+        //     }
+
+        //     span {
+        //         display: block;
+        //         position: relative;
+        //         z-index: 1;
+        //         width: 100%;
+        //         background: #fff;
+        //         // position: relative;
+        //         // overflow: hidden;
+        //     }
+        // }
+
+        .bar {
+            box-sizing: content-box;
+            height: 90%; /* Can be anything */
+            width: 5%;
+            max-width: 15px;
+            background: #777DB6;
+            display: flex;
+            align-items: flex-end;
+
+            p{
+                position: relative;
+                left: -10px;
+                width: 1px;
+                margin: 0;
+                padding: 0;
+                -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+                -moz-transform: rotate(-90deg);   /* Firefox */
+                -ms-transform: rotate(-90deg);   /* IE 9 */
+                -o-transform: rotate(-90deg);   /* Opera */
+                transform: rotate(-90deg);  
+            }
+            span {
+                display: block;
+                width: 100%;
+                background-color: #59CBFF;
+                overflow: hidden;
+            }
+        }
+    }
+}

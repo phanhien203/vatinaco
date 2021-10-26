@@ -49,33 +49,14 @@ export default function Performance() {
                         ]
                     }}
                     options={{
-                        // title: {
-                        //     display: true,
-                        //     text: 'Predicted world population (millions) in 2050'
-                        // }, scales: {
-                        //     yAxes: [{
-                        //         scaleLabel: {
-                        //             display: true,
-                        //             labelString: "Happiness"
-                        //         }
-                        //     }],
-                        //     xAxes: [{
-                        //         scaleLabel: {
-                        //             display: true,
-                        //             labelString: "GDP (PPP)"
-                        //         }
-                        //     }]
-                        // }
                         scales:
                                 {
                                     y: {
-                                        type: 'linear',
                                         grace: '100%',
                                         display: false
                                     },
 
                                     x: {
-                                        type: 'linear',
                                         grace: '100%',
                                         display: false
                                     },

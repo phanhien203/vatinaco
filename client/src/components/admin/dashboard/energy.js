@@ -35,15 +35,68 @@ export default function Energy() {
                             pointHoverBorderColor: 'rgb(255, 99, 132)'
                         }]
                     }}
-                    options={ {
+                    options={{
+                        responsive: true,
+                        elements: {
+                            line: {
+                                borderWidth: 3
+                            }
+                        },
                         plugins: {
+                            // title: {
+                            //     display: true,
+                            //     color: "#fff",
+                            //     text: "hello"
+                            // },
+                            tooltip: {
+                                enabled: true,
+                                titleColor: "#fff",
+                                bodyColor: "#fff"
+                            },
                             legend: {
-                              display: false,
-                              font: {
-                                size: 24
+                                display: false,
+                                labels: {
+
+                                    // This more specific font property overrides the global property
+                                    font: {
+                                        size: 14
+                                    }
+                                }
                             }
+                        },
+                        scales: {
+                            r: {
+                                max: 100,
+                                min: 0,
+                                ticks: {
+                                    stepSize: 20,
+                                    backdropColor: "rgba(255, 255, 255, 0)",
+                                    color: "white",
+                                    backdropPadding: 7,
+                                    padding: 13,
+                                    z: 2,
+                                    textStrokeColor: "blue",
+                                    font :{
+                                        size: 20
+                                    }
+                                },
+                                grid: {
+                                    color: 'white',
+                                    borderColor: 'white',
+                                    tickColor: 'white'
+                                },
+                                angleLines: {
+                                    color: 'white'
+                                },
+                                pointLabels: {
+                                    color: 'white',
+                                    font: {
+                                        size: 20
+                                    },
+                                    backdropPadding: 5
+                                }
                             }
-                          }
+                        }
                     }}
                 />
             </div>

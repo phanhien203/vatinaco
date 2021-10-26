@@ -20,6 +20,8 @@ function Admin() {
         return (
         <section id="admin_page">
             <Sidebar />
+            <div id="main_container">
+
             <Switch>
                 <Route path="/admin/dashboard" component={Dashboard} exact />
                 <Route path="/admin/culter" component={CulterPage} exact />
@@ -27,6 +29,7 @@ function Admin() {
                 <Route path="/admin/storage" component={StoragePage} exact />
                 {/* <Route component={NotFound}/> */}
             </Switch>
+            </div>
         </section>)
     //     else return(<></>)
     // }

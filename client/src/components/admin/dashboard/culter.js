@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Doughnut, Bar, Line } from "react-chartjs-2"
+import { Doughnut, Bar, Line, Chart } from "react-chartjs-2"
 import { useSelector } from 'react-redux'
 import axios from 'axios'
 
@@ -18,13 +18,14 @@ export default function Culter() {
         return {
             datasets: [
                 {
-                    label: "Population (millions)",
-                    lineWidth: 1,
+                    label: "60",
                     data: [2478, 5267],
+                    lineWidth: 1,
                     backgroundColor: [gradient1, gradient2],
                     borderWidth: 0.1,
                     hoverBorderWidth: 2,
-                    hoverBorderColor: '#fff'
+                    hoverBorderColor: '#fff',
+                    cutout: "60%"
                 }
             ]
 
@@ -41,18 +42,20 @@ export default function Culter() {
         return {
             datasets: [
                 {
-                    label: "Population (millions)",
+                    label: "60",
                     lineWidth: 1,
                     data: [3000, 5267],
                     backgroundColor: [gradient1, gradient2],
                     borderWidth: 0.1,
                     hoverBorderWidth: 2,
-                    hoverBorderColor: '#fff'
+                    hoverBorderColor: '#fff',
+                    cutout: "60%"
                 }
             ]
 
         }
     }
+
 
     return (
         <div className="col_left it culter">
@@ -65,17 +68,80 @@ export default function Culter() {
 
                             data={data}
                             option={{
-                                title: {
-                                    display: true,
-                                    text: "Predicted world population (millions) in 2050"
+                                maintainAspectRatio: false,
+                                responsive: true,
+                                plugins: {
+                                    title: {
+                                        display: true,
+                                        color: "#fff",
+                                        text: "Tank 1",
+                                        position: "center"
+                                    },
+                                    tooltip: {
+                                        enabled: true,
+                                        titleColor: "#fff",
+                                        bodyColor: "#fff"
+                                    },
+                                    legend: {
+                                        display: true,
+                                        labels: {        
+                                            font: {
+                                                size: 14
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    y: {
+                                        max: 100,
+                                        min: 0,
+                                        ticks: {
+                                            stepSize: 20,
+                                            backdropColor: "rgba(255, 255, 255, 0)",
+                                            color: "white",
+                                            backdropPadding: 7,
+                                            padding: 13,
+                                            z: 2,
+                                            textStrokeColor: "blue",
+                                            font :{
+                                                size: 20
+                                            }
+                                        },
+                                        labels: "abc",
+                                        title: {
+                                            display: true,
+                                            text: "vsdvs"
+                                        }
+                                    },
+                                    x: {
+                                        max: 100,
+                                        min: 0,
+                                        ticks: {
+                                            stepSize: 20,
+                                            backdropColor: "rgba(255, 255, 255, 0)",
+                                            color: "white",
+                                            backdropPadding: 7,
+                                            padding: 13,
+                                            z: 2,
+                                            textStrokeColor: "blue",
+                                            font :{
+                                                size: 20
+                                            }
+                                        },
+                                        labels: "abc",
+                                        title: {
+                                            display: true,
+                                            text: "vsdvs"
+                                        }
+                                    }
                                 }
                             }}
                         />
 
-                        <p>67%</p>
+                        {/* <p>67%</p> */}
                     </div>
 
-                    <div>Tank 1</div>
+                    {/* <div>Tank 1</div> */}
                 </div>
                 <div className="wrap_chart">
                     <div className="percent">
@@ -86,13 +152,13 @@ export default function Culter() {
                             option={{
                                 title: {
                                     display: true,
-                                    text: "Predicted world population (millions) in 2050"
+                                    text: ""
                                 }
                             }}
                         />
-                        <p>43%</p>
+                        {/* <p>43%</p> */}
                     </div>
-                    <div>Tank 2</div>
+                    {/* <div>Tank 2</div> */}
                 </div>
 
             </div>

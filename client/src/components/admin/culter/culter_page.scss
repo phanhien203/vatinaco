@@ -34,21 +34,97 @@
             border-radius: 5px;
         }
 
+        .weights {
+            .chart {
+                height: 80%;
+            }
+        }
+
         .history_production {
             background: none;
             box-shadow: none;
             grid-column-start: 2;
             grid-column-end: 4;
+
+            table {
+                margin: 0 auto;
+                color: #fff;
+                width: 98%;
+                height: calc(100% - 50px);
+                border-spacing: 0 1px;
+                tbody {
+                    height: 50%;
+                    width: 100%;
+                    display: block;
+                    overflow: auto;
+                    display: table;
+                }
+                .id {
+                    width: 15%;
+                    text-align: center;
+                }
+        
+                .time {
+                    width: 22%;
+                    text-align: left;
+                }
+        
+                .quantity {
+                    width: 20%;
+                    text-align: left;
+                }
+        
+                .performance {
+                    text-align: left;
+                }
+                .code {
+                    width: 20%;
+                    text-align: center;
+                }
+        
+                th {
+                    background: #1C224F;
+                }
+        
+                tr {
+                    // height: 20px;
+                    width: 100%;
+                    display: table;
+                }
+        
+                .tr1 {
+                    background: none;
+                }
+        
+                .tr2 {
+                    background: #3F477E;
+                }
+            }
         }
 
         .parameters {
+            height: 100%;
             .chart {
-                display: flex;
-                justify-content: space-around;
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
 
-                canvas {
-                    width: 30% !important;
+                div {
+                    height: 80%;
+                    width: 100%;
                 }
+                canvas {
+                    // height: 100% !important;
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .quality {
+
+            .chart {
+                height: 85%;
             }
         }
     }

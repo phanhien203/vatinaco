@@ -18,11 +18,13 @@ export default function Schedule() {
                         datasets: [
                             {
                                 label: "Africa",
-                                backgroundColor: "#3e95cd",
-                                data: [12, 19, 3, 5, 2, 3, 20, 3, 5, 6, 2, 1],
+                                backgroundColor: "#008FFB",
+                                data: [12, 19, 30, 50, 20, 30, 100, 30, 50, 60, 20, 10],
                                 borderRadius: 10,
-                                borderSkipped: false,
-                                borderWidth:2
+                                borderWidth: 2,
+                                borderColor: "#77c4fff5",
+                                barPercentage: 0.6,
+
                             }
                         ]
                     }}
@@ -33,19 +35,35 @@ export default function Schedule() {
                         },
                         scales:
                         {
-                        //     y: {
-                        //         grace: '100%',
-                        //         display: false
-                        //     },
-
-                            x: {
-                                grace: '90%'
-                                // display: false
-                            },
+                            yAxes: [
+                                {
+                                    gridLines: {
+                                        color: "#fff",
+                                        zeroLineColor: "#fff"
+                                    },
+                                    ticks: {
+                                        fontColor: "green",
+                                        fontSize: 18,
+                                    }
+                                }
+                            ],
+                            xAxes: [
+                                {
+                                    gridLines: {
+                                        color: "#fff",
+                                        zeroLineColor: "#fff"
+                                    },
+                                    ticks: {
+                                        fontColor: "purple",
+                                        fontSize: 14,
+                                    }
+                                }
+                            ]
                         },
 
                         plugins: {
-                            legend: false
+                            legend: false,
+                            fontColor: "white"
                         }
 
                     }}
