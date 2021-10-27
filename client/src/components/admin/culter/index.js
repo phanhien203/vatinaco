@@ -327,7 +327,7 @@ export default function CulterPage() {
                 </div>
                 <div className="history_production element">
                     <p>History production</p>
-                    <div className="chart">
+                    <div className="data-table">
                     <table>
                 <thead>
                     <tr>

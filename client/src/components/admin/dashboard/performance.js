@@ -12,10 +12,8 @@ export default function Performance() {
         <div className="col_right it performance">
             <p>Performance</p>
             <div className="chart">
-                {/* <img src='/chart3.svg' /> */}
                 <Bubble
                     data={{
-                        labels: "Africa",
                         datasets: [
                             {
                                 label: ["Now"],
@@ -36,7 +34,7 @@ export default function Performance() {
                                     y: 35,
                                     r: 35
                                 }]
-                            },  {
+                            }, {
                                 label: ["Expected"],
                                 backgroundColor: "#1AE2CA",
                                 borderColor: "rgba(0, 0, 0, 0.1)",
@@ -49,23 +47,24 @@ export default function Performance() {
                         ]
                     }}
                     options={{
-                        scales:
-                                {
-                                    y: {
-                                        grace: '100%',
-                                        display: false
-                                    },
+                        maintainAspectRatio: false,
+                        responsive: true,
+                        scales: {
+                            y: {
+                                grace: '100%',
+                                display: false
+                            },
 
-                                    x: {
-                                        grace: '100%',
-                                        display: false
-                                    },
-                                },
+                            x: {
+                                grace: '100%',
+                                display: false
+                            },
+                        },
                         plugins: {
                             legend: {
-                              display: false
+                                display: false
                             }
-                          }
+                        }
                     }}
                 />
 

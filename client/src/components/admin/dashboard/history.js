@@ -49,7 +49,7 @@ export default function History() {
                         <td className="performance">Good</td>
                         <td className="code">12341235216</td>
                     </tr>
-                    <tr className="tr1">
+                    {/* <tr className="tr1">
                         <td className="id">5</td>
                         <td className="time">2020-05-06 12:50:01</td>
                         <td className="quantity">3000</td>
@@ -62,7 +62,7 @@ export default function History() {
                         <td className="quantity">3000</td>
                         <td className="performance">Good</td>
                         <td className="code">12341235216</td>
-                    </tr>
+                    </tr> */}
                 </tbody>
             </table>
         </div>

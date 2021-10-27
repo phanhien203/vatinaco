@@ -32,6 +32,11 @@
             background: #242B61;
             box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
             border-radius: 5px;
+
+            .chart {
+                margin: 0 auto;
+                padding: 10px;
+            }
         }
 
         .weights {
@@ -137,8 +142,22 @@
 
 @media only screen and (max-width: 812px) {
     .culter_page {
+
+        h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
         .data {
             display: inline;
+
+            .element{
+                
+                .chart {
+                    margin: 0 auto;
+                    padding: 20px;
+                    max-width: 500px;
+                }
+            }
         }
     }
 }

@@ -12,12 +12,11 @@ export default function Schedule() {
         <div className="col_right it schedule">
             <p>Schedule</p>
             <div className="chart">
-                <Bar
+            <Bar
                     data={{
                         labels: ["2015-01", "2015-02", "2015-03", "2015-04", "2015-05", "2015-06", "2015-07", "2015-08", "2015-09", "2015-10", "2015-11", "2015-12"],
                         datasets: [
                             {
-                                label: "Africa",
                                 backgroundColor: "#008FFB",
                                 data: [12, 19, 30, 50, 20, 30, 100, 30, 50, 60, 20, 10],
                                 borderRadius: 10,
@@ -29,46 +28,37 @@ export default function Schedule() {
                         ]
                     }}
                     options={{
-                        title: {
-                            display: true,
-                            text: 'Population growth (millions)'
-                        },
-                        scales:
-                        {
-                            yAxes: [
-                                {
-                                    gridLines: {
-                                        color: "#fff",
-                                        zeroLineColor: "#fff"
-                                    },
-                                    ticks: {
-                                        fontColor: "green",
-                                        fontSize: 18,
-                                    }
-                                }
-                            ],
-                            xAxes: [
-                                {
-                                    gridLines: {
-                                        color: "#fff",
-                                        zeroLineColor: "#fff"
-                                    },
-                                    ticks: {
-                                        fontColor: "purple",
-                                        fontSize: 14,
-                                    }
-                                }
-                            ]
-                        },
-
+                        maintainAspectRatio: false,
+                        responsive: true,
                         plugins: {
-                            legend: false,
-                            fontColor: "white"
-                        }
-
-                    }}
-                    style={{
-                        color: '#fff'
+                            tooltip: {
+                                enabled: true,
+                                titleColor: "#fff",
+                                bodyColor: "#fff"
+                            },
+                            legend: {
+                                display: false
+                            }
+                        },
+                         scales: {
+                             y: {
+                                max: 100,
+                                min: 0,
+                                ticks: {
+                                    stepSize: 20,
+                                    color: "white"
+                                }
+                             },
+                             x: {
+                                //  display: false
+                                ticks: {
+                                    color: "white"
+                                },
+                                grid: {
+                                    display: false
+                                }
+                             }
+                         }
                     }}
                 />
             </div>

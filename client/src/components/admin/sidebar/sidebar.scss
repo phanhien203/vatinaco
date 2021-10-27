@@ -1,7 +1,10 @@
 .side_bar {
-    background: #323A7A;
-    color: #fff;
+    position: fixed;
+    z-index: 3;
+    height: 100%;
     width: 60px;
+    background: #323A7A;
+    color: #fff;    
 
     display: flex;
     flex-direction: column;
@@ -106,8 +109,6 @@
 
 @media only screen and (max-height: 550px) {
     .side_bar {
-        position: relative;
-        z-index: 3;
         background: #323a7a;
         color: #fff;
         width: 100%;
