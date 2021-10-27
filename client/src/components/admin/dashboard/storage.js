@@ -14,7 +14,7 @@ export default function Storage() {
         <div className="col_right it storage">
             <p>Storage</p>
             <div className="chart">
-                <CircularProgressbar
+                {/* <CircularProgressbar
                     value={percentage}
                     text={`${percentage}%`}
                     strokeWidth={9}
@@ -43,7 +43,7 @@ export default function Storage() {
                         }
 
                     }}
-                />
+                /> */}
 
             </div>
         </div >

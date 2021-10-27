@@ -26,8 +26,6 @@
 
 
 
-
-
 .tb_lf .item {
     background: #242B61;
 }
@@ -393,6 +391,31 @@
                 width: 100%;
                 background-color: #59CBFF;
                 overflow: hidden;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 812px) {
+    .dashboard {
+        width: 100%;
+        height: 100%; 
+        padding: 10px;
+
+        .tb_lf {
+            display: inline;
+            width: 100%;
+            height: 100%;
+
+            .it {
+                max-height: 200px;
+                .chart {
+                    width: 70%;
+                    max-width: 500px;
+                    // max-height: 300px;
+                    margin: 0 auto;
+                }
             }
         }
     }

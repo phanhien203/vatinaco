@@ -251,10 +251,16 @@ export default function PackingPage() {
                             />
                         </div>
                         <div className="subchartMixer">
-                            <img src='/packing_temperature-high-solid.svg' />
-                            <span >A red paragraph.</span>
-                            <img src='/packing_temperature-high-solid.svg' />
-                            <span >A red paragraph.</span>
+
+                            <span>
+                                <img src='/packing_temperature-high-solid.svg' />
+                                A red paragraph.
+                            </span>
+
+                            <span>
+                                <img src='/packing_temperature-high-solid.svg' />
+                                A red paragraph.
+                            </span>
                         </div>
                     </div>
                     <div className="oee_realtime element">
@@ -280,7 +286,7 @@ export default function PackingPage() {
                     <div className="history_production element">
                         <p>History production</p>
                         <div className="historyTable">
-                        ABCD
+                            ABCD
                         </div>
                     </div>
                 </div>
