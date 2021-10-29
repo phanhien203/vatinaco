@@ -136,9 +136,10 @@
             flex-direction: row;
             align-items: center;
             width: 60%;
+            min-width: 400px;
             a {
                 width: 14.2%;
-                min-width: 50px;
+                min-width: 60px;
                 display: block;
                 padding: 0px;
                 border-bottom: none;

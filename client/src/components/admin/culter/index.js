@@ -267,6 +267,37 @@ export default function CulterPage() {
                                         borderWidth: 3
                                     }
                                 },
+                                maintainAspectRatio: false,
+                                responsive: true,
+                                plugins: {
+                                    tooltip: {
+                                        enabled: true,
+                                        titleColor: "#fff",
+                                        bodyColor: "#fff"
+                                    },
+                                    legend: {
+                                        display: false
+                                    }
+                                },
+                                scales: {
+                                    y: {
+                                        max: 100,
+                                        min: 0,
+                                        ticks: {
+                                            stepSize: 10,
+                                            color: "white"
+                                        }
+                                    },
+                                    x: {
+                                        //  display: false
+                                        ticks: {
+                                            color: "white"
+                                        },
+                                        grid: {
+                                            display: false
+                                        }
+                                    }
+                                }
                             }}
                         />
                     </div>
@@ -274,136 +305,119 @@ export default function CulterPage() {
                 <div className="quality element">
                     <p>Quality</p>
                     <div className="chart">
-                    <Bar
-                    data={{
-                        labels: ["2015-01", "2015-02", "2015-03", "2015-04", "2015-05", "2015-06", "2015-07", "2015-08", "2015-09", "2015-10", "2015-11", "2015-12"],
-                        datasets: [
-                            {
-                                backgroundColor: "#008FFB",
-                                data: [12, 19, 30, 50, 20, 30, 100, 30, 50, 60, 20, 10],
-                                borderRadius: 10,
-                                borderWidth: 2,
-                                borderColor: "#77c4fff5",
-                                barPercentage: 0.6,
+                        <Bar
+                            data={{
+                                labels: ["2015-01", "2015-02", "2015-03", "2015-04", "2015-05", "2015-06", "2015-07", "2015-08", "2015-09", "2015-10", "2015-11", "2015-12"],
+                                datasets: [
+                                    {
+                                        backgroundColor: "#008FFB",
+                                        data: [12, 19, 30, 50, 20, 30, 100, 30, 50, 60, 20, 10],
+                                        borderRadius: 10,
+                                        borderWidth: 2,
+                                        borderColor: "#77c4fff5",
+                                        barPercentage: 0.6,
 
-                            }
-                        ]
-                    }}
-                    options={{
-                        maintainAspectRatio: false,
-                        responsive: true,
-                        plugins: {
-                            tooltip: {
-                                enabled: true,
-                                titleColor: "#fff",
-                                bodyColor: "#fff"
-                            },
-                            legend: {
-                                display: false
-                            }
-                        },
-                         scales: {
-                             y: {
-                                max: 100,
-                                min: 0,
-                                ticks: {
-                                    stepSize: 20,
-                                    color: "white"
-                                }
-                             },
-                             x: {
-                                //  display: false
-                                ticks: {
-                                    color: "white"
+                                    }
+                                ]
+                            }}
+                            options={{
+                                maintainAspectRatio: false,
+                                responsive: true,
+                                plugins: {
+                                    tooltip: {
+                                        enabled: true,
+                                        titleColor: "#fff",
+                                        bodyColor: "#fff"
+                                    },
+                                    legend: {
+                                        display: false
+                                    }
                                 },
-                                grid: {
-                                    display: false
+                                scales: {
+                                    y: {
+                                        max: 100,
+                                        min: 0,
+                                        ticks: {
+                                            stepSize: 20,
+                                            color: "white"
+                                        }
+                                    },
+                                    x: {
+                                        //  display: false
+                                        ticks: {
+                                            color: "white"
+                                        },
+                                        grid: {
+                                            display: false
+                                        }
+                                    }
                                 }
-                             }
-                         }
-                    }}
-                />
+                            }}
+                        />
                     </div>
                 </div>
                 <div className="history_production element">
                     <p>History production</p>
                     <div className="data-table">
-                    <table>
-                <thead>
-                    <tr>
-                        <th className="id">ID</th>
-                        <th className="time">Time</th>
-                        <th className="quantity">Quantity</th>
-                        <th className="performance">Performance</th>
-                        <th className="code">Code</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr className="tr1">
-                        <td className="id">1</td>
-                        <td className="time">2020-05-06 12:50:01</td>
-                        <td className="quantity">2000</td>
-                        <td className="performance">Good</td>
-                        <td className="code">12341235213</td>
-                    </tr>
-                    <tr className="tr2">
-                        <td className="id">2</td>
-                        <td className="time">2020-05-06 12:50:01</td>
-                        <td className="quantity">3000</td>
-                        <td className="performance">Good</td>
-                        <td className="code">12341235214</td>
-                    </tr>
-                    <tr className="tr1">
-                        <td className="id">3</td>
-                        <td className="time">2020-05-06 12:50:01</td>
-                        <td className="quantity">2500</td>
-                        <td className="performance">Good</td>
-                        <td className="code">12341235215</td>
-                    </tr>
-                    <tr className="tr2">
-                        <td className="id">4</td>
-                        <td className="time">2020-05-06 12:50:01</td>
-                        <td className="quantity">3000</td>
-                        <td className="performance">Good</td>
-                        <td className="code">12341235216</td>
-                    </tr>
-                    <tr className="tr1">
-                        <td className="id">5</td>
-                        <td className="time">2020-05-06 12:50:01</td>
-                        <td className="quantity">3000</td>
-                        <td className="performance">Good</td>
-                        <td className="code">12341235216</td>
-                    </tr>
-                    <tr className="tr2">
-                        <td className="id">6</td>
-                        <td className="time">2020-05-06 12:50:01</td>
-                        <td className="quantity">3000</td>
-                        <td className="performance">Good</td>
-                        <td className="code">12341235216</td>
-                    </tr>
-                    <tr className="tr2">
-                        <td className="id">7</td>
-                        <td className="time">2020-05-06 12:50:01</td>
-                        <td className="quantity">3000</td>
-                        <td className="performance">Good</td>
-                        <td className="code">12341235216</td>
-                    </tr>
-                    <tr className="tr1">
-                        <td className="id">8</td>
-                        <td className="time">2020-05-06 12:50:01</td>
-                        <td className="quantity">3000</td>
-                        <td className="performance">Good</td>
-                        <td className="code">12341235216</td>
-                    </tr>
-                    <tr className="tr2">
-                        <td className="id">9</td>
-                        <td className="time">2020-05-06 12:50:01</td>
-                        <td className="quantity">3000</td>
-                        <td className="performance">Good</td>
-                        <td className="code">12341235216</td>
-                    </tr>
-                </tbody>
-            </table>
+                        <table>
+                            <thead>
+                                <div>
+                                    <tr>
+                                        <th className="id">Tank</th>
+                                        <th className="data_time">Time</th>
+                                        <th className="data_quantity">Quantity</th>
+                                        <th className="data_performance">Performance</th>
+                                        <th className="data_code">Code</th>
+                                    </tr>
+                                </div>
+                            </thead>
+                            <tbody>
+                                <div>
+                                    <tr className="tr1">
+                                        <td className="id">1</td>
+                                        <td className="data_time">2020-05-06 12:50:01</td>
+                                        <td className="data_quantity">2000</td>
+                                        <td className="data_performance">Good</td>
+                                        <td className="data_code">12341235213</td>
+                                    </tr>
+                                    <tr className="tr2">
+                                        <td className="id">2</td>
+                                        <td className="data_time">2020-05-06 12:50:01</td>
+                                        <td className="data_quantity">3000</td>
+                                        <td className="data_performance">Good</td>
+                                        <td className="data_code">12341235214</td>
+                                    </tr>
+                                    <tr className="tr1">
+                                        <td className="id">3</td>
+                                        <td className="data_time">2020-05-06 12:50:01</td>
+                                        <td className="data_quantity">2500</td>
+                                        <td className="data_performance">Good</td>
+                                        <td className="data_code">12341235215</td>
+                                    </tr>
+                                    <tr className="tr2">
+                                        <td className="id">4</td>
+                                        <td className="data_time">2020-05-06 12:50:01</td>
+                                        <td className="data_quantity">3000</td>
+                                        <td className="data_performance">Good</td>
+                                        <td className="data_code">12341235216</td>
+                                    </tr>
+                                    <tr className="tr1">
+                                        <td className="id">5</td>
+                                        <td className="data_time">2020-05-06 12:50:01</td>
+                                        <td className="data_quantity">3000</td>
+                                        <td className="data_performance">Good</td>
+                                        <td className="data_code">12341235216</td>
+                                    </tr>
+                                    <tr className="tr2">
+                                        <td className="id">6</td>
+                                        <td className="data_time">2020-05-06 12:50:01</td>
+                                        <td className="data_quantity">3000</td>
+                                        <td className="data_performance">Good</td>
+                                        <td className="data_code">12341235216</td>
+                                    </tr>
+                                </div>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

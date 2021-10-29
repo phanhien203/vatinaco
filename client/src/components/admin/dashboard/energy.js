@@ -16,16 +16,15 @@ export default function Energy() {
                 <Radar
                     data={{
                         labels: [
-                            'Eating',
-                            'Drinking',
-                            'Sleeping',
-                            'Designing',
-                            'Coding',
-                            'Cycling',
-                            'Running'
+                            'Jan',
+                            'Feb',
+                            'Mar',
+                            'Apr',
+                            'May',
+                            'Jun'
                         ],
                         datasets: [{
-                            data: [60, 50, 90, 80, 50, 50, 40],
+                            data: [60, 50, 90, 80, 50, 50],
                             fill: true,
                             backgroundColor: 'rgba(255, 255, 255, 0)',
                             borderColor: 'rgb(255, 99, 132)',
@@ -36,18 +35,14 @@ export default function Energy() {
                         }]
                     }}
                     options={{
-                        responsive: true,
+                        maintainAspectRatio: false,
+                        // responsive: true,
                         elements: {
                             line: {
-                                borderWidth: 3
+                                borderWidth: 2
                             }
                         },
                         plugins: {
-                            // title: {
-                            //     display: true,
-                            //     color: "#fff",
-                            //     text: "hello"
-                            // },
                             tooltip: {
                                 enabled: true,
                                 titleColor: "#fff",
@@ -56,10 +51,8 @@ export default function Energy() {
                             legend: {
                                 display: false,
                                 labels: {
-
-                                    // This more specific font property overrides the global property
                                     font: {
-                                        size: 14
+                                        size: 12
                                     }
                                 }
                             }
@@ -69,29 +62,28 @@ export default function Energy() {
                                 max: 100,
                                 min: 0,
                                 ticks: {
-                                    stepSize: 20,
+                                    stepSize: 10,
                                     backdropColor: "rgba(255, 255, 255, 0)",
                                     color: "white",
-                                    backdropPadding: 7,
-                                    padding: 13,
+                                    backdropPadding: 5,
                                     z: 2,
                                     textStrokeColor: "blue",
                                     font :{
-                                        size: 20
+                                        size: 12
                                     }
                                 },
                                 grid: {
-                                    color: 'white',
-                                    borderColor: 'white',
+                                    color: 'rgba(255, 255, 255, 0.6)',
+                                    borderColor: 'rgba(255, 255, 255, 0.6)',
                                     tickColor: 'white'
                                 },
                                 angleLines: {
-                                    color: 'white'
+                                    color: 'rgba(255, 255, 255, 0.6)'
                                 },
                                 pointLabels: {
                                     color: 'white',
                                     font: {
-                                        size: 20
+                                        size: 10
                                     },
                                     backdropPadding: 5
                                 }

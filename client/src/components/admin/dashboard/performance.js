@@ -48,7 +48,6 @@ export default function Performance() {
                     }}
                     options={{
                         maintainAspectRatio: false,
-                        responsive: true,
                         scales: {
                             y: {
                                 grace: '100%',
@@ -56,7 +55,7 @@ export default function Performance() {
                             },
 
                             x: {
-                                grace: '100%',
+                                grace: '45%',
                                 display: false
                             },
                         },
@@ -70,9 +69,9 @@ export default function Performance() {
 
             </div>
             <div className="type">
-                <div><div style={{ background: '#FF8396' }}></div>Now</div>
-                <div><div style={{ background: '#42CAEB' }}></div>Perious</div>
-                <div><div style={{ background: '#1AE2CA' }}></div>Expected</div>
+                <span><div style={{ background: '#FF8396' }}></div>Now</span>
+                <span><div style={{ background: '#42CAEB' }}></div>Perious</span>
+                <span><div style={{ background: '#1AE2CA' }}></div>Expected</span>
             </div>
         </div>
     )

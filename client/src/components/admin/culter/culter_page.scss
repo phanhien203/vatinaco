@@ -51,58 +51,108 @@
             grid-column-start: 2;
             grid-column-end: 4;
 
+            .data-table {
+                width: 100%;
+            }
+
             table {
-                margin: 0 auto;
                 color: #fff;
-                width: 98%;
-                height: calc(100% - 50px);
-                border-spacing: 0 1px;
+                width: 100%;
+                height: calc(100% - 60px);
+                border-spacing: 0 0px;
+                position: relative;
                 tbody {
-                    height: 50%;
+                    height: 100%;
                     width: 100%;
                     display: block;
                     overflow: auto;
-                    display: table;
-                }
-                .id {
-                    width: 15%;
-                    text-align: center;
+        
+                    div {
+                        width: 100%;
+                        display: table;
+        
+                        tr {
+                            width: 100%;
+                        }
+        
+                        .id {
+                            width: 15%;
+                            text-align: center;
+                        }
+        
+                        .data_time {
+                            width: 25%;
+                            text-align: left;
+                        }
+        
+                        .data_quantity {
+                            width: 20%;
+                            text-align: left;
+                        }
+        
+                        .data_performance {
+                            width: 20%;
+                            text-align: left;
+                        }
+                        .data_code {
+                            width: 20%;
+                            text-align: center;
+                        }
+        
+                        th {
+                            background: #1C224F;
+                        }
+        
+                        .tr1 {
+                            background: none;
+                        }
+        
+                        .tr2 {
+                            background: #3F477E;
+                        }
+        
+                    }
                 }
         
-                .time {
-                    width: 22%;
-                    text-align: left;
-                }
-        
-                .quantity {
-                    width: 20%;
-                    text-align: left;
-                }
-        
-                .performance {
-                    text-align: left;
-                }
-                .code {
-                    width: 20%;
-                    text-align: center;
-                }
-        
-                th {
-                    background: #1C224F;
-                }
-        
-                tr {
-                    // height: 20px;
+                thead {
                     width: 100%;
-                    display: table;
-                }
+                    display: block;
+                    position: relative;
         
-                .tr1 {
-                    background: none;
-                }
+                    div {
+                        width: 100%;
+                        display: table;
         
-                .tr2 {
-                    background: #3F477E;
+                        tr {
+                            width: 100%;
+                            height: 20px;
+                            position: relative;
+                            background: #1C224F;
+                            .id {
+                                width: 15%;
+                                text-align: center;
+                            }
+                    
+                            .data_time {
+                                width: 25%;
+                                text-align: left;
+                            }
+                    
+                            .data_quantity {
+                                width: 20%;
+                                text-align: left;
+                            }
+                    
+                            .data_performance {
+                                width: 20%;
+                                text-align: left;
+                            }
+                            .data_code {
+                                width: 20%;
+                                text-align: center;
+                            }
+                        }
+                    }            
                 }
             }
         }
@@ -130,6 +180,15 @@
 
             .chart {
                 height: 85%;
+                max-height: 400px;
+            }
+        }
+
+        .quantity {
+
+            .chart {
+                height: 85%;
+                max-height: 400px;
             }
         }
     }
@@ -156,6 +215,14 @@
                     margin: 0 auto;
                     padding: 20px;
                     max-width: 500px;
+                }
+            }
+
+            .history_production {
+                table {
+                    tbody {
+                        overflow: initial;
+                    }
                 }
             }
         }

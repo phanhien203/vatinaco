@@ -92,28 +92,7 @@ export default function Culter() {
                                     }
                                 },
                                 scales: {
-                                    y: {
-                                        max: 100,
-                                        min: 0,
-                                        ticks: {
-                                            stepSize: 20,
-                                            backdropColor: "rgba(255, 255, 255, 0)",
-                                            color: "white",
-                                            backdropPadding: 7,
-                                            padding: 13,
-                                            z: 2,
-                                            textStrokeColor: "blue",
-                                            font :{
-                                                size: 20
-                                            }
-                                        },
-                                        labels: "abc",
-                                        title: {
-                                            display: true,
-                                            text: "vsdvs"
-                                        }
-                                    },
-                                    x: {
+                                    r: {
                                         max: 100,
                                         min: 0,
                                         ticks: {
@@ -141,7 +120,7 @@ export default function Culter() {
                         {/* <p>67%</p> */}
                     </div>
 
-                    {/* <div>Tank 1</div> */}
+                    <div>Tank 1</div>
                 </div>
                 <div className="wrap_chart">
                     <div className="percent">
@@ -150,15 +129,57 @@ export default function Culter() {
 
                             data={data2}
                             option={{
-                                title: {
-                                    display: true,
-                                    text: ""
+                                maintainAspectRatio: false,
+                                responsive: true,
+                                plugins: {
+                                    title: {
+                                        display: true,
+                                        color: "#fff",
+                                        text: "Tank 1",
+                                        position: "center"
+                                    },
+                                    tooltip: {
+                                        enabled: true,
+                                        titleColor: "#fff",
+                                        bodyColor: "#fff"
+                                    },
+                                    legend: {
+                                        display: true,
+                                        labels: {        
+                                            font: {
+                                                size: 14
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    r: {
+                                        max: 100,
+                                        min: 0,
+                                        ticks: {
+                                            stepSize: 20,
+                                            backdropColor: "rgba(255, 255, 255, 0)",
+                                            color: "white",
+                                            backdropPadding: 7,
+                                            padding: 13,
+                                            z: 2,
+                                            textStrokeColor: "blue",
+                                            font :{
+                                                size: 20
+                                            }
+                                        },
+                                        labels: "abc",
+                                        title: {
+                                            display: true,
+                                            text: "vsdvs"
+                                        }
+                                    }
                                 }
                             }}
                         />
                         {/* <p>43%</p> */}
                     </div>
-                    {/* <div>Tank 2</div> */}
+                    <div>Tank 2</div>
                 </div>
 
             </div>
